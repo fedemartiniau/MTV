@@ -1,0 +1,13 @@
+package data.frame;
+option java_outer_classname = "DataFramePackage";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.dataframe";
+
+import "datatypes.proto";
+
+message DataFrame
+{
+	optional bytes data = 1;
+	optional string dataFrameTypeIdentifier = 2;
+	optional datatypes.TimeStamp timestamp = 3;
+}
+

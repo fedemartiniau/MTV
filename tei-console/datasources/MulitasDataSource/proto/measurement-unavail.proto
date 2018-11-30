@@ -1,0 +1,9 @@
+package measurement.unavail;
+import "metadata.proto";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.measurement";
+
+message UnavailableMeasurement
+{
+	optional metadata.Metadata metadata = 15;
+}
+

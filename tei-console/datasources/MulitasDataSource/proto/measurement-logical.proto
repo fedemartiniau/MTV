@@ -1,0 +1,11 @@
+package measurement.logical;
+import "metadata.proto";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.measurement";
+
+message BooleanMeasurement
+{
+	optional bool value = 1;
+	optional bool valid =2;
+	optional metadata.Metadata metadata = 15;
+}
+

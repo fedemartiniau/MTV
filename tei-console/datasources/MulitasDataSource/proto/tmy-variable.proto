@@ -1,0 +1,35 @@
+package tmy.variable;
+
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.variable";
+
+import "measurement-alpha.proto";
+import "measurement-amount.proto";
+import "measurement-binary.proto";
+import "measurement-logical.proto";
+import "measurement-unavail.proto";
+
+
+enum VariableType
+{
+	VariableType_UNAVAILABLE = 0; //Means the measurement is not available
+	VariableType_BOOLEAN = 1;
+	VariableType_AMOUNT = 2;
+	VariableType_ALPHANUMERIC = 3;
+	VariableType_BINARY = 4;
+}
+
+
+message Variable
+{
+	optional string variable_fqvn = 1; //Fully qualified variable name 
+	
+	optional VariableType data_type = 2;
+	
+	optional measurement.alpha.AlphanumericMeasurement alphanumericMeasurement = 3;
+	optional measurement.amount.AmountMeasurement amountMeasurement = 4;
+	optional measurement.binary.BinaryMeasurement binaryMeasurement = 5;
+	optional measurement.logical.BooleanMeasurement booleanMeasurement= 6;
+	optional measurement.unavail.UnavailableMeasurement unavailableMeasurement = 7;
+	
+}
+

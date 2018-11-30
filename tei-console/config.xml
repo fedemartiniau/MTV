@@ -1,0 +1,312 @@
+<view>
+	<tab name="Vista1">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="6">	
+			<widget type="MultiPlot" title="Grafico Superior">
+				<tmyvar name="VARIABLE_DUMMY_5" compare="False" max="500" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7" sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="0" gillaY="2" filas="1" columnas="6">			
+			<widget type="MultiPlot" title="Grafico Inferior">
+				<tmyvar name="VARIABLE_DUMMY_6" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7" sombra="False" color-sombra="#54bad0" />
+			</widget>
+		</recuadro>
+
+	</tab>
+	
+	<tab name="Vista2">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico Izquierdo">
+				<tmyvar name="var_1" compare="True" max="20000" min="0" color-nominal="#fbfbfb" color-error="#fbfbfb"  sombra="True" color-sombra="#3f5fb8" />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico Derecho">
+				<tmyvar name="var_2" compare="True" max="20000" min="0" color-nominal="#dadbdd" color-error="#dadbdd"  sombra="True" color-sombra="#2e8982" />
+			</widget>
+		</recuadro>
+
+	</tab>
+	<tab name="Bus Tatus">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico Superior Izquierdo">
+				<tmyvar name="PTU_N" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		
+		<recuadro gillaX="0" gillaY="1" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico Inferior Izquierdo">
+				<tmyvar name="PTU_R" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="2" columnas="3">
+			<widget type="Grid" columns="10" rows="23">
+				<tmyvar name="Cotroller Status" column="1" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73" />
+				<tmyvar name="Cotroller_Status_01" column="1" row="2" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_02" column="1" row="3" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_03" column="1" row="4" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_04" column="1" row="5" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_05" column="1" row="6" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_06" column="1" row="7" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54" unidad="" />
+				<tmyvar name="Cotroller_Status_07" column="1" row="8" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_08" column="1" row="9" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_09" column="1" row="10" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_10" column="1" row="11" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_11" column="1" row="12" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_12" column="1" row="13" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_13" column="1" row="14" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_14" column="1" row="15" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_15" column="1" row="16" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_16" column="1" row="17" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_17" column="1" row="18" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_18" column="1" row="19" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_19" column="1" row="20" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Cotroller_Status_20" column="1" row="21" compare="True" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>			
+
+				<tmyvar name="CANvap Mode" column="3" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73" />
+				<tmyvar name="CANvap_Mode_01" column="3" row="2" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_02" column="3" row="3" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_03" column="3" row="4" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_04" column="3" row="5" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_05" column="3" row="6" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_06" column="3" row="7" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_07" column="3" row="8" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_08" column="3" row="9" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_09" column="3" row="10" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_10" column="3" row="11" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_11" column="3" row="12" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_12" column="3" row="13" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_13" column="3" row="14" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_14" column="3" row="15" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_15" column="3" row="16" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_16" column="3" row="17" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_17" column="3" row="18" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_18" column="3" row="19" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_19" column="3" row="20" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="CANvap_Mode_20" column="3" row="21" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+				
+				<tmyvar name="Alarm Count" column="5" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73" />
+				<tmyvar name="Alarm_Count_01" column="5" row="2" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_02" column="5" row="3" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_03" column="5" row="4" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_04" column="5" row="5" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_05" column="5" row="6" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_06" column="5" row="7" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_07" column="5" row="8" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_08" column="5" row="9" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_09" column="5" row="10" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_10" column="5" row="11" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_11" column="5" row="12" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_12" column="5" row="13" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_13" column="5" row="14" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_14" column="5" row="15" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_15" column="5" row="16" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_16" column="5" row="17" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_17" column="5" row="18" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_18" column="5" row="19" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_19" column="5" row="20" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Alarm_Count_20" column="5" row="21" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+
+				<tmyvar name="SYNC status" column="7" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73" />
+				<tmyvar name="SYNC_status_01" column="7" row="2" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_02" column="7" row="3" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_03" column="7" row="4" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_04" column="7" row="5" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_05" column="7" row="6" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_06" column="7" row="7" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_07" column="7" row="8" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_08" column="7" row="9" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_09" column="7" row="10" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_10" column="7" row="11" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_11" column="7" row="12" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_12" column="7" row="13" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_13" column="7" row="14" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_14" column="7" row="15" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_15" column="7" row="16" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_16" column="7" row="17" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_17" column="7" row="18" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_18" column="7" row="19" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_19" column="7" row="20" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="SYNC_status_20" column="7" row="21" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				
+				<tmyvar name="Active Bus" column="9" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73" />
+				<tmyvar name="Active_Bus_01" column="9" row="2" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_02" column="9" row="3" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_03" column="9" row="4" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_04" column="9" row="5" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_05" column="9" row="6" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_06" column="9" row="7" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_07" column="9" row="8" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54" unidad="" />
+				<tmyvar name="Active_Bus_08" column="9" row="9" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_09" column="9" row="10" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_10" column="9" row="11" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_11" column="9" row="12" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_12" column="9" row="13" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_13" column="9" row="14" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_14" column="9" row="15" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_15" column="9" row="16" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_16" column="9" row="17" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_17" column="9" row="18" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_18" column="9" row="19" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_19" column="9" row="20" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Active_Bus_20" column="9" row="21" compare="False" type="nuber" max="45" min="-45" color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+
+				
+			</widget>
+		</recuadro>
+		
+		
+	</tab>
+		<tab name="Status">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Status 1">
+				<tmyvar name="VARIABLE_DUMMY_5" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		
+		<recuadro gillaX="0" gillaY="1" filas="1" columnas="5">			
+			<widget type="MultiPlot" title="Status 2">
+				<tmyvar name="VARIABLE_DUMMY_6" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Status 3">
+				<tmyvar name="VARIABLE_DUMMY_7" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="5" gillaY="1" filas="1" columnas="1">
+			<widget type="Grid" columns="4" rows="5">
+				<tmyvar name="Status_1" column="1" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="Status_1" column="2" row="1" compare="True" type="text"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Status_2" column="3" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="Status_2" column="4" row="1" compare="True" type="text"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+				<tmyvar name="Status_3" column="1" row="2" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="Status_3" column="2" row="2" compare="True" type="text"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+				<tmyvar name="Status_4" column="3" row="2" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />				
+				<tmyvar name="Status_4" column="4" row="2" compare="True" type="text"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+
+				<tmyvar name="Distancia" column="1" row="4" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="var_1" column="2" row="4" compare="False" type="nuber"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad="cm"/>
+				<tmyvar name="Tensión" column="3" row="4" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="var_2" column="4" row="4" compare="False" type="nuber"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad="v"/>	
+				<tmyvar name="Temperaura" column="1" row="5" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
+				<tmyvar name="CANvap_Mode_01" column="2" row="5" compare="False" type="nuber"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad="ºC"/>	
+				<tmyvar name="Carga" column="3" row="5" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />				
+				<tmyvar name="Alarm_Count_02" column="4" row="5" compare="False" type="nuber"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad="%"/>					
+			</widget>
+		</recuadro>
+		
+		
+	</tab>
+	<tab name="Vista4">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico 1">
+				<tmyvar name="VARIABLE_DUMMY_5" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico 2">
+				<tmyvar name="VARIABLE_DUMMY_6" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="0" gillaY="1" filas="3" columnas="6">			
+			<widget type="MultiPlot" title="Grafico 3">
+				<tmyvar name="VARIABLE_DUMMY_8" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+
+	</tab>
+	<tab name="Vista5">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico 1">
+				<tmyvar name="VARIABLE_DUMMY_5" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="0" gillaY="1" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico 3">
+				<tmyvar name="VARIABLE_DUMMY_6" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="2" columnas="3">			
+			<widget type="MultiPlot" title="Grafico 2">
+				<tmyvar name="VARIABLE_DUMMY_6" compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		
+
+	</tab>
+	<tab name="Vista6">
+		<recuadro gillaX="1" gillaY="1" filas="1" columnas="6">	
+			<widget type="MultiPlot" title="Grafico de las 4 variables">
+				<tmyvar name="VARIABLE_DUMMY_5"  compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+				<tmyvar name="VARIABLE_DUMMY_6"  compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+				<tmyvar name="VARIABLE_DUMMY_7"  compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+				<tmyvar name="VARIABLE_DUMMY_8"  compare="False" max="20000" min="0" color-nominal="#c5c9c7" color-error="#c5c9c7"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+	</tab>
+	<tab name="Vista7">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico 1">
+				<tmyvar name="Cotroller_Status_01" compare="True" max="45" min="-45" color-nominal="#c5c9c7" color-error="#cf6275"  sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="0" gillaY="1" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico 2">
+				<tmyvar name="Cotroller_Status_02" compare="True" max="20" min="-25" color-nominal="#7ea07a" color-error="#ff474c"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="0" filas="1" columnas="3">	
+			<widget type="MultiPlot" title="Grafico 3">
+				<tmyvar name="Cotroller_Status_03" compare="True" max="45" min="-45" color-nominal="#21c36f" color-error="#fc5a50"  sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+		<recuadro gillaX="3" gillaY="1" filas="1" columnas="3">			
+			<widget type="MultiPlot" title="Grafico 4">
+				<tmyvar name="Cotroller_Status_04" compare="True" max="45" min="-45" color-nominal="#71aa34" color-error="#fe2c54"   sombra="False" color-sombra="#54bad0"/>
+			</widget>
+		</recuadro>
+
+	</tab>	
+	<tab name="Vista8">
+		<recuadro gillaX="0" gillaY="0" filas="1" columnas="2">	
+			<widget type="Label">
+				<tmyvar name="Active_Bus_01"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="2" gillaY="0" filas="1" columnas="2">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_2"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="4" gillaY="0" filas="1" columnas="1">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_3"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="5" gillaY="0" filas="1" columnas="1">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_4"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="0" gillaY="1" filas="1" columnas="2">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_5"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="2" gillaY="1" filas="1" columnas="2">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_6"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="4" gillaY="1" filas="1" columnas="1">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_7"   />
+			</widget>
+		</recuadro>
+		<recuadro gillaX="5" gillaY="1" filas="1" columnas="1">	
+			<widget type="Label">
+				<tmyvar name="VARIABLE_DUMMY_8"  />
+			</widget>
+		</recuadro>
+	</tab>
+</view>

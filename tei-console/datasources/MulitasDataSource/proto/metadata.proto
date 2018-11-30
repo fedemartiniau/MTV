@@ -1,0 +1,18 @@
+package metadata;
+option java_outer_classname = "MetadataPackage";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.metadata";
+
+import "datatypes.proto";
+import "metadata-instrument.proto";
+import "metadata-extra.proto";
+
+
+
+message Metadata
+{
+	optional datatypes.TimeStamp acquisition_time_stamp = 1;
+	optional metadata.instrument.InstrumentMetadata instrument_metadata = 2;
+	optional uint64 lifetime = 3; //Variable lifetime in nanoseconds (counting since acquisition_time_stamp);
+	optional bytes raw_value = 4;
+	repeated metadata.extra.ExtraMetadataEntry extra_metadata = 5;
+}

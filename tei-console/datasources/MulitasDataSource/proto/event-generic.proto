@@ -1,0 +1,15 @@
+package event.generic;
+
+import "metadata.proto";
+
+
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.event.generic";
+
+message GenericEvent
+{
+	optional metadata.Metadata metadata =1;
+	optional string summary = 2;
+	optional string description = 3;
+	optional string subtype = 4; // variable id | operator name
+	
+}

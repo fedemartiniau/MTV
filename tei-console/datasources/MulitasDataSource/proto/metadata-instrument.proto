@@ -1,0 +1,15 @@
+package metadata.instrument;
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.metadata";
+
+import "datatypes.proto";
+import "metadata-extra.proto";
+
+
+
+message InstrumentMetadata
+{
+	optional string instrument_id = 1; //serial number
+	optional string instrument_description = 2;
+	optional datatypes.TimeStamp instrument_expiration = 3;
+	repeated metadata.extra.ExtraMetadataEntry extra_metadata = 4;
+}

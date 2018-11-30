@@ -1,0 +1,29 @@
+package event;
+option java_outer_classname = "EventPackage";
+
+import "event-generic.proto";
+import "event-alarm.proto";
+
+
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.event";
+
+enum EventType
+{
+	ALARM_INSTANCE_TRIGGERED = 0;
+	ALARM_ACKNOWLEGED = 1;
+	INFRASTRCUTURE = 3; //service registered, etc
+	OPERATOR = 4; // spontaneous operator message
+	TESTING =5; //test started, test ended, test failed
+	DEVICE_UNDER_TEST = 6; //device under test events
+	TEST_SETUP = 7; //test-setup related events
+	GENERIC = 8;
+}
+
+message Event
+{
+	optional EventType type = 1;
+	optional event.generic.GenericEvent genericEvent = 2;
+	optional event.alarm.AlarmTriggeredEvent alarmTriggeredEvent = 3;
+	optional event.alarm.AlarmAcknowlegedEvent alarmAcknowlegedEvent = 4;
+	
+}

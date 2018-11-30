@@ -1,0 +1,12 @@
+package measurement.binary;
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.measurement";
+import "metadata.proto";
+
+
+message BinaryMeasurement
+{
+	optional bytes data = 1;
+	optional bool valid =2;
+	optional metadata.Metadata metadata = 15;
+}
+

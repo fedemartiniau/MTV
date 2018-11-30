@@ -1,0 +1,13 @@
+package measurement.alpha;
+import "metadata.proto";
+
+
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.measurement";
+
+message AlphanumericMeasurement
+{
+	optional string value = 1;
+	optional bool valid =2;
+	optional metadata.Metadata metadata = 15;
+}
+

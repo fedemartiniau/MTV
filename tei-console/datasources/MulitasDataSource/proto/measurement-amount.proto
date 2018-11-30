@@ -1,0 +1,18 @@
+package measurement.amount;
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.measurement";
+
+import "measurement-unit.proto";
+import "metadata.proto";
+import "datatypes.proto";
+
+message AmountMeasurement
+{
+	optional datatypes.Number value = 1;
+	optional bool valid =2;
+	optional measurement.unit.Unit unit = 3;
+	optional measurement.unit.UnitPrefix unit_prefix = 4;
+	optional float error = 5; // absolute error
+	
+	optional metadata.Metadata metadata = 15;
+}
+

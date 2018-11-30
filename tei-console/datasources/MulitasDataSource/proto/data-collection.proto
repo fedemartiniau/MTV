@@ -1,0 +1,29 @@
+package data.collection;
+option java_outer_classname = "DataCollectionPackage";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.datacollection";
+
+import "tmy-variable.proto";
+import "event.proto";
+import "data-frame.proto";
+
+enum DataCollectionRecordType
+{
+	VARIABLE = 0;
+	EVENT = 1;
+	DATA_FRAME = 2;
+}
+
+message DataCollectionRecord
+{
+	optional DataCollectionRecordType type = 1;
+	optional tmy.variable.Variable variable =2;
+	optional event.Event event = 3;
+	optional data.frame.DataFrame data_frame = 4;
+}
+
+message DataCollection
+{
+	repeated DataCollectionRecord record_list = 1;
+}
+
+

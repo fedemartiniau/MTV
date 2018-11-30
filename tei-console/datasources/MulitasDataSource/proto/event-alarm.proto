@@ -1,0 +1,24 @@
+package event.alarm;
+
+import "metadata.proto";
+
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.event.alarm";
+
+message AlarmTriggeredEvent
+{
+	optional metadata.Metadata metadata =1;
+	optional string summary = 2;
+	optional string description = 3;
+	optional string reference = 4; // variable id/etc
+	optional string alarm_instance_id = 5;
+}
+
+message AlarmAcknowlegedEvent
+{
+	optional metadata.Metadata metadata =1;
+	optional string summary = 2;
+	optional string description = 3;
+	optional string reference = 4; // variable id/etc
+	optional string alarm_instance_id = 5;
+	optional string acknowleging_entity = 6; //name /identifier of the entity who acknowleged the alarm instance
+}

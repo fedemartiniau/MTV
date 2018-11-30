@@ -1,0 +1,9 @@
+package metadata.extra;
+import "datatypes.proto";
+option java_package = "com.invap.mulitas.serialization.impl.protobuf.metadata";
+
+message ExtraMetadataEntry {
+  optional string key = 1;
+  optional datatypes.AnyType value = 2;
+}
+
