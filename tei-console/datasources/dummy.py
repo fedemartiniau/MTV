@@ -61,7 +61,7 @@ class DummyDataSource(QThread):
         self.context["Cotroller_Status_19"] = 0
         self.context["Cotroller_Status_20"] = 0
         
-        self.context["Status_1"] = 'ERROR'
+        self.context["Status_1"] = 'ALERTA'
         self.context["Status_2"] = 'ERROR'
         self.context["Status_3"] = 'True'
         self.context["Status_4"] = 'True'
@@ -288,11 +288,15 @@ class DummyDataSource(QThread):
                 
                 if(random.randint(0,4)==3):
                     self.context["Status_1"] = 'ERROR'
+                elif(random.randint(0,4)==2):
+                    self.context["Status_1"] = 'ALERTA'                
                 else:
                     self.context["Status_1"] = 'OK'
                 
                 if(random.randint(0,5)==3):
                     self.context["Status_2"] = 'ERROR'
+                elif(random.randint(0,4)==2):
+                    self.context["Status_2"] = 'ALERTA' 
                 else:
                     self.context["Status_2"] = 'OK'
                 

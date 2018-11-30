@@ -139,13 +139,22 @@ class MyDynamicMplCanvas(MyMplCanvas):
         self.bufsize = 100
         self.historial_variable = {}
         self.historial_variable['y'] = {}
-        self.x_data = np.zeros(self.bufsize)
+        self.historial_variable['x'] = {}
+        
+        self.historial_variable['pausaX'] = {}
+        self.historial_variable['pausaY'] = {}
+        
+        self.historial_variable['x'] = np.zeros(self.bufsize)
         
         for i in range(self.bufsize):
-            self.x_data[i] = context['TIMESTAMP']
+            self.historial_variable['x'][i] = context['TIMESTAMP']
+            self.historial_variable['pausaX'][i] = context['TIMESTAMP']
+            
             
         for variable_nombre in self.variables.keys():
             self.historial_variable['y'][variable_nombre] = np.zeros(self.bufsize)
+            self.historial_variable['pausaY'][variable_nombre] = np.zeros(self.bufsize)
+            
         
         self.titulo = titulo
     #--------------------------------------------------------------------------------------------------------    
@@ -158,8 +167,8 @@ class MyDynamicMplCanvas(MyMplCanvas):
     
     #--------------------------------------------------------------------------------------------------------   
     def update_figure(self):
-        self.x_data = np.roll(self.x_data,-1)
-        self.x_data[self.bufsize-1] = self.context['TIMESTAMP']
+        self.historial_variable['x'] = np.roll(self.historial_variable['x'],-1)
+        self.historial_variable['x'][self.bufsize-1] = self.context['TIMESTAMP']
         
         for variable_nombre in self.variables:
             self.historial_variable['y'][variable_nombre] = np.roll(self.historial_variable['y'][variable_nombre],-1) 
@@ -172,13 +181,13 @@ class MyDynamicMplCanvas(MyMplCanvas):
 
         nombreVar=''
         for variable_nombre in self.variables.keys():         
-            self.axes.plot( self.x_data,self.historial_variable['y'][variable_nombre],label=variable_nombre)
+            self.axes.plot( self.historial_variable['x'],self.historial_variable['y'][variable_nombre],label=variable_nombre)
             nombreVar=variable_nombre
         
         if (self.variables[nombreVar]['comparar'] == 'True'):
             self.axes.set_facecolor(self.getBackGroundColot(self.context[nombreVar],self.variables[nombreVar]['max'],self.variables[nombreVar]['min'],self.variables[nombreVar]['color-true'],self.variables[nombreVar]['color-false']))
             if (self.variables[nombreVar]['sombra'] == 'True'):
-                self.axes.fill_between(self.x_data, self.historial_variable['y'][variable_nombre], facecolor=self.variables[nombreVar]['color-sombra'], interpolate=True)
+                self.axes.fill_between(self.historial_variable['x'], self.historial_variable['y'][variable_nombre], facecolor=self.variables[nombreVar]['color-sombra'], interpolate=True)
 
         self.axes.set_title(self.titulo)
         self.axes.set_xlabel("X")

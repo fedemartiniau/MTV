@@ -79,9 +79,17 @@ class GridWidgets(QWidget):
                     propiedades['comparar'] = tmyvar.attrib["compare"]
                     propiedades['unidad'] =  ""
                     if (propiedades['comparar'] == 'True'):
-                        propiedades['value'] = tmyvar.attrib["value"]
+                        
+                        valores = {}
+                        lista_valores_colores = tmyvar.attrib["value"].split(';')
+                        
+                        for valorColor in lista_valores_colores:
+                            valor_color = valorColor.split(':')
+                            valores[valor_color[0]]=valor_color[1]
+                        
+                        propiedades['value'] = valores
+                        
                         propiedades['color-nominal'] = tmyvar.attrib["color-nominal"]
-                        propiedades['color-error'] = tmyvar.attrib["color-error"]
                 
                     self.var_position[tmyvar.attrib["name"]] = propiedades
                     self.tableWidget.setItem(self.var_position[tmyvar.attrib["name"]]['row'],self.var_position[tmyvar.attrib["name"]]['column'], QTableWidgetItem('{}'.format(self.context[tmyvar.attrib["name"]])))
@@ -125,8 +133,8 @@ class GridWidgets(QWidget):
     def getBackGroundColor(self,value,propiedades):
         '''     Obtengo el color a partir del valor de la variable  '''
         if (propiedades['type'] == "text"):
-            if (value == propiedades['value']):
-                color = propiedades['color-error'] 
+            if (value in propiedades['value'].keys()):
+                color = propiedades['value'][value] 
             else:
                 color = propiedades['color-nominal']
         elif (propiedades['type'] == "nuber"):

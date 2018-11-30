@@ -41,7 +41,6 @@ from matplotlib.figure import Figure
 from widgets.label_widgets import LabelWidgets 
 from widgets.multiplot_widgets import MultiPlotWidgets
 from widgets.grid_widgets import GridWidgets
-from widgets.tetris_widgets import TetrisWidget
 
 # ###### ERRORES ######
 # Todos los mensajes de error y los alertas deben estar identificados con un número (código) único para el script 

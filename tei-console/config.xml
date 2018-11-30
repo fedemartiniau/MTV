@@ -176,13 +176,13 @@
 		<recuadro gillaX="5" gillaY="1" filas="1" columnas="1">
 			<widget type="Grid" columns="4" rows="5">
 				<tmyvar name="Status_1" column="1" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
-				<tmyvar name="Status_1" column="2" row="1" compare="True" type="text"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Status_1" column="2" row="1" compare="True" type="text"  value="ERROR:#fe2c54;ALERTA:#ffe066"  color-nominal="#87ae73" unidad=""/>
 				<tmyvar name="Status_2" column="3" row="1" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
-				<tmyvar name="Status_2" column="4" row="1" compare="True" type="text"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+				<tmyvar name="Status_2" column="4" row="1" compare="True" type="text"  value="ERROR:#fe2c54;ALERTA:#ffe066"  color-nominal="#87ae73"  unidad=""/>	
 				<tmyvar name="Status_3" column="1" row="2" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
-				<tmyvar name="Status_3" column="2" row="2" compare="True" type="text"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>	
+				<tmyvar name="Status_3" column="2" row="2" compare="True" type="text"  value="False:#fe2c54"  color-nominal="#87ae73" unidad=""/>	
 				<tmyvar name="Status_4" column="3" row="2" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />				
-				<tmyvar name="Status_4" column="4" row="2" compare="True" type="text"  value="False"  color-nominal="#87ae73" color-error="#fe2c54"  unidad=""/>
+				<tmyvar name="Status_4" column="4" row="2" compare="True" type="text"  value="False:#fe2c54"  color-nominal="#87ae73"   unidad=""/>
 
 				<tmyvar name="Distancia" column="1" row="4" compare="False" type="title" color-text="#87ae73" color-background="#87ae73"  />
 				<tmyvar name="var_1" column="2" row="4" compare="False" type="nuber"  value="ERROR"  color-nominal="#87ae73" color-error="#fe2c54"  unidad="cm"/>
